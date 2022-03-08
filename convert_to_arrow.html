@@ -35,8 +35,7 @@
             setBackgroundColorById("paragraph", "blue");
         }
         document.getElementById("paragraph-2").onclick = () => {
-            const bgColor = document.getElementById("color-input").value;
-            setBackgroundColorById("paragraph-2", bgColor);
+            setBackgroundColorById("paragraph-2", getValueFromId("color-input"));
         }
         document.getElementById("alert").onclick = () => {
             alert(document.getElementById("popup-input").value);
